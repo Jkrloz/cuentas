@@ -6,6 +6,14 @@
     android:paddingBottom="@dimen/activity_vertical_margin"
     tools:context="cl.sdomingu.cuentas.Cuenta_Paso2">
 
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+
+
+        </RelativeLayout>
+
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -26,18 +34,20 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/descripcion"
-            />
+            android:numeric="integer" />
     </RelativeLayout>
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/relativeLayout2"
-        android:layout_below="@id/relativeLayout">
+        android:layout_below="@id/relativeLayout"
+        android:longClickable="true"
+        android:padding="30sp">
 
         <Button
             android:id="@+id/quienPagoBoton"
-            android:layout_width="wrap_content"
+            android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:text="Pagado por:"
             android:onClick="mostrarDialogo"
@@ -45,32 +55,13 @@
 
         <Button
             android:id="@+id/buttonPartes"
-            android:layout_width="wrap_content"
+            android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:text="En partes iguales"
+
             android:layout_below="@id/quienPagoBoton"
             />
 
         </RelativeLayout>
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/relativeLayout3"
-        android:layout_below="@id/relativeLayout2">
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/imageButton"
-            android:text="Foto"
-            android:layout_centerVertical="true"
-            android:layout_alignParentStart="true"
-            />
-
-        </RelativeLayout>
-
-
-
 
 </RelativeLayout>

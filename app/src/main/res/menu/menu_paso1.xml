@@ -1,0 +1,10 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" tools:context=".Home">
+
+
+    <item
+        android:id="@+id/action_paso2"
+        android:title="Siguiente "
+        android:orderInCategory="100"
+        android:showAsAction="always"/>
+</menu>

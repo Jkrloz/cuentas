@@ -4,6 +4,7 @@ import android.content.res.Resources;
 import android.os.Bundle;
 import android.support.v4.app.DialogFragment;
 import android.support.v4.app.FragmentActivity;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
 
@@ -23,11 +24,17 @@ public class Cuenta_Paso2 extends FragmentActivity implements QuienPagaDialog.qu
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cuenta_paso2);
 
+        getActionBar().setDisplayHomeAsUpEnabled(true);
+
         Resources res = getResources();
         countriesArray = res.getStringArray(R.array.quienPagoArray);
     }
 
-
+    @Override
+    public boolean onOptionsItemSelected(MenuItem menuItem){
+        onBackPressed();
+        return true;
+    }
 
     public void mostrarDialogo (View v){
 
